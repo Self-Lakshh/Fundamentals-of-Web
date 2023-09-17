@@ -4,8 +4,35 @@
     <title>Day 3 - Semantic Blog</title>
 </head>
 <body>
-    <!-- Setup body structure -->
-    <header><h1>My Developer Blog</h1></header>
-    <footer>Copyright 2023</footer>
+    <!-- Learning semantic tags today. They tell the browser what content is inside. -->
+    <header>
+        <h1>My Developer Blog</h1>
+        <nav>
+            <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Article is for standalone self-contained content -->
+        <article>
+            <h2>My First Week Learning Web Dev</h2>
+            <p>It has been a wild ride learning semantic HTML. Layout elements look much better now!</p>
+            
+            <section>
+                <h3>What is Semantic HTML?</h3>
+                <p>Semantic HTML tags clearly describe their meaning in a human- and machine-readable way (e.g. article, section, footer).</p>
+            </section>
+        </article>
+        
+        <!-- Aside represents a sidebar -->
+        <aside>
+            <h4>About Author</h4>
+            <p>I am a student coding daily to improve my frontend engineering skills.</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>Copyright 2023 - My Dev Blog</p>
+    </footer>
 </body>
 </html>
