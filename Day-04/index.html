@@ -5,8 +5,30 @@
 </head>
 <body>
     <h2>Student Registration</h2>
-    <form>
-        <!-- Need to add fields -->
+    <!-- Working with forms and input tags -->
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
+            
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required><br><br>
+            
+            <!-- Radio inputs require same name to select only one -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            
+            <!-- Checkbox for agreement -->
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the Terms & Conditions</label><br><br>
+            
+            <!-- Form submit button -->
+            <button type="submit">Submit Registration</button>
+        </fieldset>
     </form>
 </body>
 </html>
