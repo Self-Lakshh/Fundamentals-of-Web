@@ -1,23 +1,138 @@
+/* Using flexbox for responsive card layouts */
 body {
-    font-family: sans-serif;
-    background: #f4f6f9;
-    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 50px 20px;
 }
 
 .title {
     text-align: center;
+    color: #1f2937;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 40px;
 }
 
 .pricing-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: stretch;
+    flex-wrap: wrap; /* allows wrapping on narrow viewports */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .pricing-card {
-    background: white;
+    background: #ffffff;
+    border-radius: 12px;
     padding: 30px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Popular pricing card style highlights */
+.pricing-card.popular {
+    border-color: #3b82f6;
+    transform: scale(1.03);
+}
+
+.pricing-card.popular:hover {
+    transform: scale(1.03) translateY(-8px);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3b82f6;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pricing-card h3 {
+    margin: 10px 0;
+    color: #374151;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #111827;
+    margin: 15px 0;
+}
+
+.price span {
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: normal;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+.features li {
+    padding: 8px 0;
+    color: #4b5563;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.pricing-btn {
+    background-color: #e5e7eb;
+    color: #374151;
+    border: none;
+    padding: 12px;
     border-radius: 8px;
-    width: 250px;
-    border: 1px solid #ddd;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 15px;
+}
+
+.pricing-btn:hover {
+    background-color: #d1d5db;
+}
+
+.popular-btn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.popular-btn:hover {
+    background-color: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .pricing-card.popular {
+        transform: none;
+    }
+    .pricing-card.popular:hover {
+        transform: translateY(-8px);
+    }
 }

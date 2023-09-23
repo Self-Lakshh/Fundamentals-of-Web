@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 9 - Pricing Cards</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2 class="title">Our Pricing Plans</h2>
+    <h2 class="title">Flexible Pricing Plans</h2>
+    <p class="subtitle">Choose the plan that fits your growth needs</p>
+    
     <div class="pricing-container">
         <div class="pricing-card">
-            <h3>Basic</h3>
-            <p class="price">$9 / mo</p>
-            <ul>
-                <li>1 Project</li>
-                <li>Support</li>
+            <h3>Starter</h3>
+            <div class="price">$9 <span>/ month</span></div>
+            <ul class="features">
+                <li>1 Active Website</li>
+                <li>5GB Cloud Storage</li>
+                <li>Standard Email Support</li>
+                <li>Free Domain SSL</li>
             </ul>
+            <button class="pricing-btn">Get Started</button>
         </div>
+        
         <div class="pricing-card popular">
-            <h3>Pro</h3>
-            <p class="price">$29 / mo</p>
-            <ul>
-                <li>10 Projects</li>
-                <li>Priority Support</li>
+            <span class="badge">Most Popular</span>
+            <h3>Professional</h3>
+            <div class="price">$29 <span>/ month</span></div>
+            <ul class="features">
+                <li>10 Active Websites</li>
+                <li>50GB Cloud Storage</li>
+                <li>24/7 Priority Support</li>
+                <li>Custom Dev Domain</li>
             </ul>
+            <button class="pricing-btn popular-btn">Go Pro</button>
+        </div>
+        
+        <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <div class="price">$99 <span>/ month</span></div>
+            <ul class="features">
+                <li>Unlimited Websites</li>
+                <li>500GB Cloud Storage</li>
+                <li>Personal Account Manager</li>
+                <li>Custom API Access</li>
+            </ul>
+            <button class="pricing-btn">Contact Us</button>
         </div>
     </div>
 </body>
