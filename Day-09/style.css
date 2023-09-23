@@ -1,3 +1,23 @@
+body {
+    font-family: sans-serif;
+    background: #f4f6f9;
+    padding: 40px;
+}
+
+.title {
+    text-align: center;
+}
+
 .pricing-container {
     display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 250px;
+    border: 1px solid #ddd;
 }
