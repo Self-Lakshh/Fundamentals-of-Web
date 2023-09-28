@@ -1,0 +1,7 @@
+/* custom hero styling overrides */
+.hero-banner {
+    background-color: #f8fafc;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
