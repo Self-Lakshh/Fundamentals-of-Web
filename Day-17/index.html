@@ -1,23 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Day 17 - Restaurant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17 - La Bistro Gourmet Italian Restaurant</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container mt-4">
-        <h1>La Bistro</h1>
-        <h3>Our Menu</h3>
-        <div class="row">
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">La Bistro</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#book">Book Reservation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Banner -->
+    <section class="bg-dark text-white text-center py-5" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200'); background-size: cover; background-position: center;">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold">Authentic Italian Flavors</h1>
+            <p class="lead">Hand-made pastas and wood-fired pizzas in a warm classic ambiance.</p>
+        </div>
+    </section>
+    
+    <!-- Menu -->
+    <section class="container my-5" id="menu">
+        <h2 class="text-center mb-5 text-secondary">Our Curated Menu</h2>
+        <div class="row g-4">
             <div class="col-md-4">
-                <div class="card">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=350" class="card-img-top" alt="Pasta">
                     <div class="card-body">
-                        <h5>Spaghetti Bolognese</h5>
-                        <p>$15.99</p>
+                        <h5 class="card-title fw-bold">Spaghetti Bolognese</h5>
+                        <p class="card-text text-muted">Fresh home-made noodles in a rich beef and tomato reduction sauce.</p>
+                        <p class="fw-bold text-primary">$18.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=350" class="card-img-top" alt="Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Margherita Pizza</h5>
+                        <p class="card-text text-muted">Wood-fired flatbread with fresh mozzarella, basil leaves and olive oil.</p>
+                        <p class="fw-bold text-primary">$15.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=350" class="card-img-top" alt="Tiramisu">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Classic Tiramisu</h5>
+                        <p class="card-text text-muted">Espresso-soaked ladyfingers layered with whipped mascarpone cream.</p>
+                        <p class="fw-bold text-primary">$8.99</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+    <!-- Reservation Form -->
+    <section class="bg-secondary text-white py-5" id="book">
+        <div class="container col-lg-6">
+            <h2 class="text-center mb-4">Book a Table</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-label form-control" id="name" required>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="guests" class="form-label">Guests Count</label>
+                        <select class="form-select" id="guests">
+                            <option>2 People</option>
+                            <option>4 People</option>
+                            <option>6+ People</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="date" class="form-label">Reservation Date</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-warning w-100 mt-3 fw-bold">Submit Booking</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
