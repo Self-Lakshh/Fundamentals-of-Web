@@ -23,3 +23,14 @@ Successfully completed the styling and layout section. Understood selectors, typ
 - **Day-12**: Full landing homepage optimized across tablets & mobile viewports.
 
 *Learnings*: Grid makes 2D structures easier to coordinate while Flexbox is great for 1D columns. Still getting used to wrapping breakpoints but responsive designs look cleaner now.
+
+## Milestone 3: Bootstrap 5 layouts (Days 13-18)
+Practiced utility-first layout building using the Bootstrap 5 system.
+- **Day-13**: Grid practice containers, rows and col adaptation.
+- **Day-14**: SaaS Landing hero using custom styling modifications and buttons.
+- **Day-15**: Dashboard metrics layout displaying user updates list.
+- **Day-16**: Product lander containing responsive Carousel slide controls.
+- **Day-17**: Restaurant menu details utilizing reservation form fields.
+- **Day-18**: Modern personal learning projects dashboard cards.
+
+*Learnings*: Bootstrap cards and container layouts simplify the code. Speeding up styles using container templates.
