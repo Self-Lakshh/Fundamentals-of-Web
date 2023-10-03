@@ -1,8 +1,16 @@
-// Get references to elements
-const heading = document.getElementById("heading");
-const btn = document.getElementById("btn");
+// Learning DOM manipulation today
+// Select HTML nodes using querySelector
+const textBtn = document.querySelector("#text-btn");
+const colorBtn = document.querySelector("#color-btn");
+const targetHeading = document.querySelector("#target-heading");
+const block = document.querySelector("#block");
 
-// Add click listener
-btn.addEventListener("click", () => {
-    heading.textContent = "You clicked the button!";
+// Trigger heading text updates
+textBtn.addEventListener("click", () => {
+    targetHeading.textContent = "Text Updated via JavaScript!";
+});
+
+// Toggle style class on the block element
+colorBtn.addEventListener("click", () => {
+    block.classList.toggle("active");
 });

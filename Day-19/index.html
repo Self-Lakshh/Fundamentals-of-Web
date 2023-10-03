@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Day 19 - DOM Manipulation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19 - DOM Manipulation Practice</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #3b82f6;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .active {
+            background-color: #e11d48;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="heading">Hello World</h1>
-    <button id="btn">Change Text</button>
+    <h2>DOM manipulation practice</h2>
+    <p>Using document methods to interact with elements dynamically.</p>
+    
+    <button id="text-btn">Change Heading Text</button>
+    <button id="color-btn">Toggle Block Color</button>
+    
+    <h3 id="target-heading">Base Title</h3>
+    <div class="box" id="block"></div>
+    
     <script src="script.js"></script>
 </body>
 </html>
