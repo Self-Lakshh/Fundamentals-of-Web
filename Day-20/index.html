@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20 - Simple JS Counter App</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f1f5f9;
+        }
+        .counter-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            width: 250px;
+        }
+        .count-value {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #1e293b;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+        .primary { background: #3b82f6; color: white; border: none; }
+        .danger { background: #ef4444; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+        <h3>Counter Dashboard</h3>
+        <div class="count-value" id="counter">0</div>
+        
+        <!-- Action Buttons -->
+        <button class="primary" id="incr-btn">Incr (+)</button>
+        <button class="danger" id="decr-btn">Decr (-)</button>
+        <button id="reset-btn">Reset</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
