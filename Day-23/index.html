@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head><title>Todo App</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 23 - Todo App with Local Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h2>Todo list</h2>
-    <input type="text" id="task-input">
-    <button onclick="addTask()">Add</button>
-    <ul id="task-list"></ul>
+    <div class="todo-app">
+        <h3>Task Planner</h3>
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="What needs to be done?">
+            <button id="add-btn">Add Task</button>
+        </div>
+        <ul class="todo-list" id="todo-list"></ul>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
