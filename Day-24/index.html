@@ -1,8 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head><title>Weather</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 24 - Weather App Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <input type="text" id="city-input">
-    <div id="weather-info"></div>
+    <div class="weather-card">
+        <h3>Weather Checker</h3>
+        <div class="search-box">
+            <input type="text" id="city-name" placeholder="Enter city name (e.g. London)">
+            <button id="search-btn">Search</button>
+        </div>
+        
+        <div id="weather-display" class="weather-display hidden">
+            <h2 id="display-city">London</h2>
+            <div class="temp-val" id="display-temp">15&deg;C</div>
+            <p id="display-desc">Partly Cloudy</p>
+        </div>
+        <p id="error-message" class="error hidden"></p>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
