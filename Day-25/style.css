@@ -1,0 +1,46 @@
+body {
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.quiz-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 380px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.choices-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.btn-choice {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-choice:hover {
+    background: #eff6ff;
+    border-color: #3b82f6;
+}
+
+.progress {
+    font-size: 0.85rem;
+    color: #64748b;
+    text-align: center;
+}

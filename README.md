@@ -34,3 +34,15 @@ Practiced utility-first layout building using the Bootstrap 5 system.
 - **Day-18**: Modern personal learning projects dashboard cards.
 
 *Learnings*: Bootstrap cards and container layouts simplify the code. Speeding up styles using container templates.
+
+## Milestone 4: JavaScript Core Interactivity (Days 19-25)
+Gained experience adding dynamic behaviors and user interactivity.
+- **Day-19**: DOM selector click modifications using addEventListener.
+- **Day-20**: Counter widget with click increment and state text-color updates.
+- **Day-21**: Light/Dark theme switchers saving selections inside LocalStorage cache.
+- **Day-22**: Calculator solving math equations safely with Functions constructor.
+- **Day-23**: Task planner with checked completion indicators and local storage.
+- **Day-24**: Simulated weather conditions lookup dashboard.
+- **Day-25**: Interactive question progress assessment quiz.
+
+*Learnings*: Adding listener triggers to update classList names is extremely useful for toggling themes. Persistence via localStorage keeps apps responsive on tab closures.
