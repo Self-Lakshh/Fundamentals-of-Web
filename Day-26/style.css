@@ -1,0 +1,17 @@
+/* Base layout custom font family styling variables */
+:root {
+    --primary-color: #3b82f6;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: #0f172a;
+    color: #f8fafc;
+    margin: 0;
+}
+
+h1, h2, h3, .logo {
+    font-family: var(--font-heading);
+}
