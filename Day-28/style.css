@@ -1,0 +1,26 @@
+/* responsive layout optimized for smaller screens */
+:root {
+    --primary-color: #3b82f6;
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+    font-family: var(--font-heading);
+}
+
+/* responsive details for navigation bar links */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #212529;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+}
