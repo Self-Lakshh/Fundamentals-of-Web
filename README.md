@@ -46,3 +46,13 @@ Gained experience adding dynamic behaviors and user interactivity.
 - **Day-25**: Interactive question progress assessment quiz.
 
 *Learnings*: Adding listener triggers to update classList names is extremely useful for toggling themes. Persistence via localStorage keeps apps responsive on tab closures.
+
+## Milestone 5: Final Resume & Portfolio Website (Days 26-30)
+Assembled all learnings into a premium responsive personal developer resume & portfolio website.
+- **Day-26**: Page base grid skeleton layout setup.
+- **Day-27**: Section outlines, profile descriptions, and milestone cards.
+- **Day-28**: Styling overrides resolving tablet breakpoint navigations.
+- **Day-29**: Javascript arrays loading cards dynamically on grid displays.
+- **Day-30**: Premium responsive layouts showing off Outfit font integration, glassmorphism headers, radial color gradients, and secure message feedback forms.
+
+*Learnings*: Over the course of 30 days, I have evolved from writing a simple blank HTML document to creating a polished, responsive website featuring advanced styling, typography, animations, and interactive scripting.
